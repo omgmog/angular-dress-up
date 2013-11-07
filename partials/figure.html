@@ -1,0 +1,19 @@
+<ul class="the-body">
+    <li
+        ng-repeat="body_part in body_parts"
+        class="{{ body_part }} {{ selected_body_parts[body_part] }}"
+    >
+    </li>
+</ul>
+<div class="controls">
+    <div ng-repeat="body_part in body_parts" class="select-{{ body_part }}">
+        <h2>{{ body_part }}</h2>
+        <ul>
+            <li ng-repeat="team_member in marketing_team">
+                <a href="{{ replace_body_part(body_part, team_member) }}">
+                    {{ team_member }}
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

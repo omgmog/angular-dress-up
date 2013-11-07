@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, "Open Sans", sans-serif;
+    font-size: 12px;
+}
+section {
+    width: 960px;
+    margin: 100px auto;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+}
+.the-body {
+    float: left;
+}
+.controls {
+    float: right;
+}
+.controls div {
+    width: 25%;
+    float: left;
+}
+.controls ul {
+    margin: 0;
+    padding: 0 20px;
+}
+.hair, .face, .body, .legs {
+    width: 100px;
+    height: 100px;
+    display: block;
+    overflow: hidden;
+    text-indent: -99em;
+}
+.hair {
+    background-color: transparent;
+}
+.hair.male_1,
+.hair.male_2 {
+    height: 60px;
+    width: 80px;
+    margin: 0 10px 40px;
+}
+.hair.male_1 {
+    background-color: brown;
+}
+.hair.male_2 {
+    background-color: yellow;
+}
+.hair.female_1 {
+    background-color: orange;
+}
+.hair.female_2 {
+    background-color: black;
+}
+.face {
+    width: 60px;
+    margin: -80px 20px 0;
+    height: 90px;
+    background-color: pink;
+    border-top: 10px dotted transparent;
+    background-position: 0 -20px;
+}
+.hair.male_1 + .face {
+    border-top-color: brown;
+}
+.hair.male_2 + .face {
+    border-top-color: yellow;
+}
+.hair.female_1 + .face {
+    border-top-color: orange;
+}
+.hair.female_2 + .face {
+    border-top-color: black;
+}
+.face.male_1 {
+    background-image: url(../img/face/male_1.png);
+}
+.face.male_2 {
+    background-image: url(../img/face/male_2.png);
+}
+.face.female_1 {
+    background-image: url(../img/face/female_1.png);
+}
+.face.female_2 {
+    background-image: url(../img/face/female_2.png);
+}
+.body {
+    background-color: pink;
+    width: 120px;
+    margin: -10px 0 0 -10px;
+}
+.body.male_1 {
+    background-image: url(../img/body/male_1.png);
+}
+.body.male_2 {
+    background-image: url(../img/body/male_2.png);
+}
+.body.female_1 {
+    background-image: url(../img/body/female_1.png);
+}
+.body.female_2 {
+    background-image: url(../img/body/female_2.png);
+}
+.legs {
+    background-color: pink;
+    height: 150px;
+    width: 80px;
+    margin-left: 10px;
+}
+.legs.male_1 {
+    background-image: url(../img/legs/male_1.png);
+}
+
+.legs.male_2 {
+    background-image: url(../img/legs/male_2.png);
+}
+
+.legs.female_1 {
+    background-image: url(../img/legs/female_1.png);
+}
+
+.legs.female_2 {
+    background-image: url(../img/legs/female_2.png);
+}
